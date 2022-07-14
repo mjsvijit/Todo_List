@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "title": "car wash",
+      "status": "false",
+      "id": 1
+    }
+  ],
+  "comments": []
+}

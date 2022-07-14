@@ -1,0 +1,62 @@
+
+@media screen and (min-width:600px) and (max-width:1440px){
+    .maindiv{
+        width:40%;
+        height:250px;
+        margin-left: 30%;
+        overflow-y: scroll;
+        background-color: rgb(31, 31, 64);
+       
+    }
+
+    .listdiv{
+        display:flex;
+        justify-content:space-between ;
+        align-items: center;
+    }
+
+   .set{
+       float:right;
+   
+      
+   }
+   .met{
+       float:right
+   }
+   .p{
+       float: left;
+       margin-left:auto;
+   }
+  
+}
+
+@media screen and (min-width:0px) and (max-width:600px){
+    .maindiv{
+        width:80%;
+        height:250px;
+        margin-left: 10%;
+        overflow-y: scroll;
+        background-color: rgb(31, 31, 64);
+   }
+
+   .listdiv{
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.set{
+   float:right;
+
+  
+}
+.met{
+   float:right
+}
+.p{
+   float: left;
+   margin-left:auto;
+}
+
+  
+}
