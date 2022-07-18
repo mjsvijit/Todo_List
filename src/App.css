@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  height: 403px;;
+  height: 679px;;
   background-color: #1f284e;
   color:white
 
@@ -12,7 +12,7 @@
 @media screen and (min-width:0px) and (max-width:600px){
   .App {
     text-align: center;
-    height: 450px;;
+    height: 700px;;
     background-color: #1f284e;
     color:white
   
