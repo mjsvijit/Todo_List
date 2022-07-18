@@ -14,8 +14,11 @@ const InputTodo = () => {
     }=useContext(AuthContext);
 
     const handleAdd =()=>{
+        if(data===""){
+            alert("Please Enter Some Thing!")
+        }else{ 
     
-        fetch(' http://localhost:3000/posts',{
+        fetch('https://mytodolistapple.herokuapp.com/posts',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"
@@ -31,13 +34,15 @@ const InputTodo = () => {
             setData("");
             incCount(1);
         })
-       
+    }
     }
  
     const handleChange = ()=>{
+        if(data===""){
+            alert("Please Enter Some Thing!")
+        }else{ 
        
-       
-        fetch(`http://localhost:3000/posts/${uid}`,{
+        fetch(`https://mytodolistapple.herokuapp.com/posts/${uid}`,{
             method:'PUT',
             headers:{
                 "Content-Type":'application/json',
@@ -51,6 +56,7 @@ const InputTodo = () => {
                   isVis();
                   setData("");
         })
+    }
     }
 
 

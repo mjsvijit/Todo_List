@@ -35,7 +35,7 @@ export const AuthContextProvider = ({children}) => {
 
     const handleMark=(task)=>{
         const val=((task.status==="false")? "true" : "false");
-       fetch(`http://localhost:3000/posts/${task.id}`,{
+       fetch(`https://mytodolistapple.herokuapp.com/posts/${task.id}`,{
            method:'PUT',
            headers:{
                "Content-Type":'application/json',
@@ -52,7 +52,7 @@ export const AuthContextProvider = ({children}) => {
     }
 
     const handleDelete=(task)=>{
-        fetch(`http://localhost:3000/posts/${task.id}`,{
+        fetch(`https://mytodolistapple.herokuapp.com/posts/${task.id}`,{
             method:'DELETE',
             headers:{
                 "Content-Type":'application/json',
@@ -67,7 +67,7 @@ export const AuthContextProvider = ({children}) => {
      }
 
      useEffect(() => {
-        fetch('http://localhost:3000/posts')
+        fetch('https://mytodolistapple.herokuapp.com/posts')
         .then((res)=>res.json())
         .then((data)=>datageting(data));
      }, [count])
